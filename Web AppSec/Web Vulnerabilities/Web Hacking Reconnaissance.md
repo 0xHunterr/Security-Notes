@@ -17,10 +17,10 @@ You might be able to find the associated contact information, such as an email, 
 1. Find the IP address of a domain you know by running the nslookup command:`$ nslookup facebook.com`
 3. Reverse IP lookup and IP ranges (CIDRs) and also run `whois` on the IP:
     
-    ![Untitled](Media/Web%20AppSec%20Images/Untitled%201.png)
+    ![Untitled](Gitbook/Media/Web%20AppSec%20Images/Untitled%201.png)
     
 3. Autonomous system numbers (ASNs) identify the owners of these networks. By checking if two IP addresses share an ASN: `$ whois -h whois.cymru.com 157.240.2.20`
-    ![Untitled](Media/Web%20AppSec%20Images/Untitled%202.png)
+    ![Untitled](Gitbook/Media/Web%20AppSec%20Images/Untitled%202.png)
     
 
 # Subdomain Enumeration
