@@ -22,8 +22,6 @@ You might be able to find the associated contact information, such as an email, 
     
 3. Autonomous system numbers (ASNs) identify the owners of these networks. By checking if two IP addresses share an ASN: `$ whois -h whois.cymru.com 157.240.2.20`
     ![Untitled](../../Media/Web%20AppSec%20Images/Untitled%202.png)
->>>>>>> fix-images:Web AppSec/Web Vulnerabilities/Web Hacking Reconnaissance.md
-    
 
 # Subdomain Enumeration
 After finding as many domains on the target as possible, locate as many subdomains on those domains as you can.
