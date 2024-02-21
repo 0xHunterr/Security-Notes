@@ -1,13 +1,3 @@
-# Content
-- [[#What is clickjacking]]
-- [[#Mechanisms]]
-- [[#Prevention]]
-- [[#Hunting for Clickjacking]]
-- [[#Bypassing Protections]]
-- [[#Escalating the Attack]]
-- [[#A Note on Delivering the Clickjacking Payload]]
-- [[#Finding Your First Clickjacking Vulnerability!]]
-- [[#References]]
 # What is clickjacking
  Clickjacking, or user-interface redressing, is an attack that tricks users into clicking a malicious button that has been made to look legitimate. Attackers achieve this by using HTML page-overlay techniques to hide one web page within another.
 ==Note that clickjacking is rarely considered in scope for bug bounty programs, as it usually involves a lot of user interaction on the victim’s part==
@@ -246,8 +236,6 @@ Let’s say that `bank.example.com` contains multiple clickjacking. One of them 
 - you might be able to collect data including the street address, phone numbers, and credit card information associated with the account!
 - Note that for this attack to succeed, the victim user would have to click the attacker’s site twice
 
-
-
 ## Chaining with CSRF 
 Exploit Clickjacking to achieve CSFRF
 look at [[Cross-Site Request Forgery (CSRF)#Exploit Clickjacking]] for more info
@@ -261,12 +249,12 @@ check out the Social-Engineer Toolkit(https://github.com/trustedsec/social-engin
 >In my experience, the most effective location in which to place the hidden button is directly on top of a Please Accept That This Site Uses Cookies! pop-up. Users usually click this button to close the window without much thought
 
 # Finding Your First Clickjacking Vulnerability!
-1. [ ] Spot the state-changing actions on the website and keep a note of their URL locations. Mark the ones that require only mouse clicks to execute for further testing[[#Step 1 Look for State-Changing Actions]].
-2. [ ] Check these pages for the `X-Frame-Options`, `Content-Security-Policy` header, and a `SameSite` session cookie. If you can’t spot these protective features, the page might be vulnerable! (check: [[#Step 2 Check the Response Headers]])
-3. [ ] Craft an HTML page that frames the target page, and load that page in a browser to see if the page has been framed check [[#Clickjacking HTML code template]] for template.
-4. [ ] Confirm the vulnerability by executing a simulated clickjacking attack on your own test account
-5. [ ] Craft a sneaky way of delivering your payload to end users, and consider the larger impact of the vulnerability check: [[#A Note on Delivering the Clickjacking Payload]].
-6. [ ] Draft your first clickjacking report!
+ 1. Spot the state-changing actions on the website and keep a note of their URL locations. Mark the ones that require only mouse clicks to execute for further testing 
+ 2. Check these pages for the X-Frame-Options, Content-Security-Policy header, and a SameSite session cookie. If you can’t spot these protective features, the page might be vulnerable!
+ 3. Craft an HTML page that frames the target page, and load that page in a browser to see if the page has been framed
+ 4. Confirm the vulnerability by executing a simulated clickjacking attack on your own test account
+ 5. Craft a sneaky way of delivering your payload to end users, and consider the larger impact of the vulnerability 
+ 6. Draft your first clickjacking report!
 # References
 - [Bug Bounty Bootcamp book](https://www.amazon.eg/-/en/Bug-Bounty-Bootcamp-Reporting-Vulnerabilities/dp/1718501544)
 - [PortsWigger-Web Security Academy | Clickjacking](https://portswigger.net/web-security/clickjacking)

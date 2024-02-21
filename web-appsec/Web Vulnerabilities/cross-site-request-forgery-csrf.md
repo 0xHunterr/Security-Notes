@@ -172,8 +172,8 @@ def process_state_changing_action():
 
 ## Bypass Double-Submit CSRF Tokens
 
-> [!double-submit cookie] double-submit cookie
-> In this technique, the state-changing request contains the same random token as both a cookie and a request parameter, and the server checks whether the two values are equal. If the values match, the request is seen as legitimate. Otherwise, the application rejects it.
+> [!NOTE] double-submit cookie
+> In this technique, the state-changing request contains the same random token as both a cookie and a request parameter, and the server checks whether the two values are equal. If the values match, the request is seen as legitimate. Otherwise, the application rejects it.
 > 
 > In this system, it does not matter whether the tokens themselves are valid or legitimate. The server checks only whether the token in the cookies is the same as the token in the request parameters
 

@@ -19,9 +19,10 @@ You might be able to find the associated contact information, such as an email, 
 1. Find the IP address of a domain you know by running the nslookup command:`$ nslookup facebook.com`
 2.  Reverse IP lookup and IP ranges (CIDRs) and also run `whois` on the IP:
 
-    ![Untitled](Medi/Web%20AppSec%20Images/Untitled%201.png AppSec Images/Untitled 1.png>)
-3. Autonomous system numbers (ASNs) identify the owners of these networks. By checking if two IP addresses share an ASN: `$ whois -h whois.cymru.com 157.240.2.20` ![Untitled](Medi/Web%20AppSec%20Images/Untitled%202.png AppSec Images/Untitled 2.png>)
-
+    ![Untitled](Media/Web%20AppSec%20Images/Untitled%201.png AppSec Images/Untitled 1.png)
+3. Autonomous system numbers (ASNs) identify the owners of these networks. By checking if two IP addresses share an ASN: `$ whois -h whois.cymru.com 157.240.2.20`
+	
+	![Untitled](Media/Web%20AppSec%20Images/Untitled%202.png AppSec Images/Untitled 2.png)
 # Subdomain Enumeration
 After finding as many domains on the target as possible, locate as many subdomains on those domains as you can. 
 Each subdomain represents a new angle for attacking the network, good tool for that is [subfinder](https://github.com/projectdiscovery/subfinder)You can find some good wordlists made by other hackers online. [SecLists](https://github.com/danielmiessler/SecLists/) use a wordlist generation tool like [Commonspeak2](https://github.com/assetnote/commonspeak2/) to generate wordlists based on the most current internet data. 
@@ -117,4 +118,4 @@ Here you can find an extensive summary of all the tools mentioned in this articl
 
 ## Automation
 
-Once you have a solid understanding of how to conduct recon on a target, you can try to leverage recon platforms like \[Nuclei]\(https://github.com/projectdiscovery/ nuclei/) or [Intrigue Core](https://github.com/intrigueio/intrigue-core/) to make your recon process more efficient. But when you’re starting out, I recommend that you do recon manually with individual tools or write your own automated recon scripts to learn about the process for Bash Script tutorial visit \[\[Bash Scripting]]
+Once you have a solid understanding of how to conduct recon on a target, you can try to leverage recon platforms like [Nuclei](https://github.com/projectdiscovery/ nuclei/) or [Intrigue Core](https://github.com/intrigueio/intrigue-core/) to make your recon process more efficient. But when you’re starting out, I recommend that you do recon manually with individual tools or write your own automated recon scripts to learn about the process for Bash Script tutorial visit [[Bash Scripting]]

@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "web-appsec/Web Hacking Reconnaissance.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
+                "file": "web-appsec/Web Hacking Reconnaissance.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "README.md",
+                "file": "web-appsec/Web Hacking Reconnaissance.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md"
+                "file": "web-appsec/Web Hacking Reconnaissance.md"
               }
             }
           }
@@ -161,17 +161,22 @@
   },
   "active": "5aeb04d5b0c316be",
   "lastOpenFiles": [
-    "network-pentesting/README.md",
-    "network-pentesting/Active Directory (AD)/README.md",
     "network-pentesting/buffer-overflow-attacks.md",
-    "web-appsec/Web Vulnerabilities/README.md",
-    "README.md",
-    "SUMMARY.md",
+    "network-pentesting/Active Directory (AD)/README.md",
+    "network-pentesting/Recon.md",
+    "network-pentesting/privilege-escalation.md",
+    "network-pentesting/Active Directory (AD)/attacking-active-directory-initial-attack-vectors.md",
     "web-appsec/Bug Bounty/Writing A Good Report.md",
     "web-appsec/Bug Bounty/Picking A Bug Bounty Program.md",
-    "web-appsec/Web Hacking Reconnaissance.md",
+    "web-appsec/Web Vulnerabilities/clickjacking.md",
+    "web-appsec/Web Vulnerabilities/cross-site-request-forgery-csrf.md",
+    "web-appsec/Web Vulnerabilities/cross-site-scripting-xss.md",
     "web-appsec/Bug Bounty/README.md",
-    "network-pentesting/Recon.md",
+    "web-appsec/Web Hacking Reconnaissance.md",
+    "README.md",
+    "network-pentesting/README.md",
+    "web-appsec/Web Vulnerabilities/README.md",
+    "SUMMARY.md",
     "README (1).md",
     "network-pentesting/Active Directory (AD)/attacking-active-directory-post-compromise-enumeration.md",
     "web-appsec/Bash Scripting.md",
