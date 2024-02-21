@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "network-pentesting/Active Directory (AD)/README.md",
+                "file": "network-pentesting/recon.md",
                 "mode": "source",
                 "source": false
               }
@@ -25,14 +25,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "web-appsec/Web Hacking Reconnaissance.md",
+                "file": "network-pentesting/recon.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -98,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "web-appsec/Web Hacking Reconnaissance.md",
+                "file": "network-pentesting/recon.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "web-appsec/Web Hacking Reconnaissance.md",
+                "file": "network-pentesting/recon.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "web-appsec/Web Hacking Reconnaissance.md"
+                "file": "network-pentesting/recon.md"
               }
             }
           }
@@ -159,10 +158,18 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "5aeb04d5b0c316be",
+  "active": "9aabb9bbc9b5b7b7",
   "lastOpenFiles": [
-    "network-pentesting/buffer-overflow-attacks.md",
+    "network-pentesting/scanning-and-enumeration.md",
+    "network-pentesting/recon.md",
+    "README.md",
     "network-pentesting/Active Directory (AD)/README.md",
+    "web-appsec/Web Hacking Reconnaissance.md",
+    "web-appsec/bug-bounty/writing-a-good-report-web-appsec-bug-20bounty-writing-20a-20good-20report.md-bounty-writing-a-good-r.md",
+    "web-appsec/bug-bounty/picking-a-bug-bounty-program-web-appsec-bug-20bounty-picking-20a-20bug-20bounty-20program.md-bounty.md",
+    "web-appsec/bug-bounty",
+    "web-appsec/bash-scripting.md",
+    "network-pentesting/buffer-overflow-attacks.md",
     "network-pentesting/Recon.md",
     "network-pentesting/privilege-escalation.md",
     "network-pentesting/Active Directory (AD)/attacking-active-directory-initial-attack-vectors.md",
@@ -172,8 +179,6 @@
     "web-appsec/Web Vulnerabilities/cross-site-request-forgery-csrf.md",
     "web-appsec/Web Vulnerabilities/cross-site-scripting-xss.md",
     "web-appsec/Bug Bounty/README.md",
-    "web-appsec/Web Hacking Reconnaissance.md",
-    "README.md",
     "network-pentesting/README.md",
     "web-appsec/Web Vulnerabilities/README.md",
     "SUMMARY.md",
@@ -181,9 +186,6 @@
     "network-pentesting/Active Directory (AD)/attacking-active-directory-post-compromise-enumeration.md",
     "web-appsec/Bash Scripting.md",
     "CLICKJACKING.md",
-    "CROSS-SITE SCRIPTING (XSS).md",
-    "Open Redirects.md",
-    "Chapter 2 (SUSTAINING YOUR SUCCESS).md",
-    "Chapter 1 (PICKING A BUG BONTY PROGRAM).md"
+    "CROSS-SITE SCRIPTING (XSS).md"
   ]
 }

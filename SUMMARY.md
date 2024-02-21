@@ -16,7 +16,7 @@
 
 ## 📟 Network Pentesting
 
-* [Recon](network-pentesting/recon.md)
+* [Recon](network-pentesting/Recon.md)
 * [Scanning & Enumeration](network-pentesting/scanning-and-enumeration.md)
 * [Active Directory (AD)](<network-pentesting/Active Directory (AD)/README.md>)
   * [Attacking Active Directory-Initial Attack Vectors](<network-pentesting/Active Directory (AD)/attacking-active-directory-initial-attack-vectors.md>)
