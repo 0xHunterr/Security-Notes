@@ -39,7 +39,7 @@ Take a look at the full HTML page example:
  width:500px;
 Clickjacking   147
  height:500px;
- opacity:0.00001; /*We then make the iframe invisible by setting its opacity to a very low value*/
+ opacity:0.00001; /*We then make the iframe invisible by setting its opacity to a very low value*/
  z-index:1; /*higher z-index value will be on top*/
  }
  #decoy {
@@ -59,7 +59,7 @@ cybersecurity articles in your email inbox!</h3>
  <label for="email">Email:</label>
  <br>
  <input type="text" id="email" value="Please enter your email!">
- <br><br> /*carefully position the iframe so the Transfer Balance button sits directly on top of this Subscribe button, using new lines created by HTML’s line break tag*/
+ <br><br> /*carefully position the iframe so the Transfer Balance button sits directly on top of this Subscribe button, using new lines created by HTML’s line break tag*/
  <input type="submit" value="Submit">
  </form>
  </div>
@@ -72,10 +72,10 @@ cybersecurity articles in your email inbox!</h3>
 ```
 
 so if we set the opacity back to 1, You can see that the Transfer Balance button is located directly on top of the Subscribe to Newsletter button
-![[../../Media/Web AppSec Images/Pasted image 20240204170516.png]]
+[Pasted image 20240204170516.png](<../../Media/Web AppSec Images/Pasted image 20240204170516.png>)
 
 Once we reset the opacity of the `iframe` to opacity:0.00001 to make the sensitive form invisible, the site looks like a normal newsletter page
-[t](<../../Media/Web AppSec Images/Pasted image 20240204170627.png>)
+[Pasted image 20240204170516.png](<../../Media/Web AppSec Images/Pasted image 20240204170627.png>)
 If the user is logged into the banking site, they’ll be logged into the `iframe` too, so the banking site’s server will recognize the requests sent by the `iframe` as legit. When the user clicks the seemingly harmless button, they’re executing a balance transfer on `example.com`!
 ==This is a simplified example. In reality, payment applications will not be implemented this way==, because it would violate data security standards
 
