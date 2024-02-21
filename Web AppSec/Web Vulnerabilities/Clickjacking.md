@@ -26,7 +26,7 @@ allowfullscreen>
 
 Let’s say that `example.com` is a banking site that includes a page for transferring your money with a click of a button.
 You can access the balance transfer page with the URL `https:// www.example.com/transfer_money`, This URL accepts two parameters: the recipient account ID and the transfer amount If you visit the URL with these parameters present, such as `https://www.example.com/transfer_money?recipient=RECIPIENT_ACCOUNT &amount=AMOUNT_TO_TRANSFER`, the HTML form on the page will appear prefilled 
-![[../../../Media/Web AppSec Images/Pasted image 20240203194531.png]]
+![[Media/Web AppSec Images/Pasted image 20240203194531.png]]
 
 Now imagine that an attacker embeds this sensitive banking page in an `iframe` on their own site, like this:
 ```html
@@ -80,9 +80,9 @@ cybersecurity articles in your email inbox!</h3>
 </html>
 ```
 
-so if we set the opacity back to 1, You can see that the Transfer Balance button is located directly on top of the Subscribe to Newsletter button![[../../../Media/Web AppSec Images/Pasted image 20240204170516.png]]
+so if we set the opacity back to 1, You can see that the Transfer Balance button is located directly on top of the Subscribe to Newsletter button![[Media/Web AppSec Images/Pasted image 20240204170516.png]]
 
-Once we reset the opacity of the `iframe` to opacity:0.00001 to make the sensitive form invisible, the site looks like a normal newsletter page![[../../../Media/Web AppSec Images/Pasted image 20240204170627.png]]
+Once we reset the opacity of the `iframe` to opacity:0.00001 to make the sensitive form invisible, the site looks like a normal newsletter page![[Media/Web AppSec Images/Pasted image 20240204170627.png]]
 If the user is logged into the banking site, they’ll be logged into the `iframe` too, so the banking site’s server will recognize the requests sent by the `iframe` as legit. When the user clicks the seemingly harmless button, they’re executing a balance transfer on `example.com`!
 ==This is a simplified example. In reality, payment applications will not be implemented this way==, because it would violate data security standards
 
@@ -207,7 +207,7 @@ else{
 1. search for a location on the victim site that allows you to embed custom `iframes` like (social media sites allows users to share links on their profile, features to embed videos, audio, images, web page builders)
 2. construct a page that frames the victim’s targeted functionality
 3. Then place the entire page in an `iframe` hosted by the victim site
-![[../../../Media/Web AppSec Images/Pasted image 20240206094104.png]]
+![[Media/Web AppSec Images/Pasted image 20240206094104.png]]
 This way, both` top.location` and `self.location` point to `victim.com`, The frame-busting code would determine that the innermost victim.com page is framed by another victim.com page within its domain
 
 

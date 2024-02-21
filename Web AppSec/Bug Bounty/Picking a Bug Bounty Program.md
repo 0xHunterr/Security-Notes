@@ -123,5 +123,5 @@ get feedback as soon as possible.
 
 After you’ve identified a few programs that you are interested in, you could
 list the properties of each one to compare them
-![Untitled](../../../Media/Web%20AppSec%20Images/Untitled.png)
+![Untitled](Media/Web%20AppSec%20Images/Untitled.png)
 
