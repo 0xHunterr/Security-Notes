@@ -112,7 +112,7 @@ open it, it should generate a request that change the password, check if the pas
 # Bypassing CSRF Protection
 
 ## Exploit Clickjacking
-for more info and detailed guide on Clickjacking take look at [[CLICKJACKING]] 
+for more info and detailed guide on Clickjacking take look at [[Clickjacking]] 
 If the endpoint uses CSRF tokens but the page itself is vulnerable to clickjacking, You exploit the Clickjacking to achieve the CSRF.
 by framing the page in a malicious site while having the state-changing request originate from the legitimate site. If the page where the vulnerable endpoint is located is vulnerable to clickjacking, you’ll be able to achieve the same results as a CSRF attack on the endpoint
 

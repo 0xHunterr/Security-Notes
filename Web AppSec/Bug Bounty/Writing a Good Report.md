@@ -4,53 +4,40 @@
 ## Step 1: Craft a Descriptive Title
 
 - Aim for a title that sums up the issue in one sentence. Ideally, it should allow the
-security team to immediately get an idea of what the vulnerability is, where it
-occurred, and its potential severity. To do so, it should answer the following
-questions:(**What is the vulnerability you’ve found? Is it an instance of a wellknown vulnerability type, such as IDOR or XSS? Where did you find it onthe target application?**)
+security team to immediately get an idea of what the vulnerability is, where it occurred, and its potential severity. To do so, it should answer the following questions:(**What is the vulnerability you’ve found? Is it an instance of a well-known vulnerability type, such as IDOR or XSS? Where did you find it on the target application?**)
 
-ex: instead of a report title like “IDOR on a Critical Endpoint,”
-use one like “**IDOR on `https://example.com/change_password` Leads to Account
-Takeover for All Users**.” 
-
+Example: instead of a report title like “IDOR on a Critical Endpoint,”
+use one like “**IDOR on `https://example.com/change_password` Leads to Account Takeover for All Users**.” 
 - the goal is to give the security engineer reading
 your report a good idea of the content you’ll discuss in the rest of it.
 
 ## Step 2: Provide a Clear Summary
 This section includes all the relevant details you weren’t able to communicate in the title, like the HTTP request parameters used for the attack, how you found it, and so on.
-
-ex: The `https://example.com/change_password` endpoint takes two POST
-body parameters: `user_id` and `new_password`.
-A POST request to this endpoint would change the password of user `user_id` to
-`new_password`. This endpoint is not validating the `user_id` parameter, and as a result, any user can change anyone else’s password by manipulating the `user_id` parameter.
-
+Example: The `https://example.com/change_password` endpoint takes two POST body parameters: `user_id` and `new_password`.
+A POST request to this endpoint would change the password of user `user_id` to `new_password`. 
+This endpoint is not validating the `user_id` parameter, and as a result, any user can change anyone else’s password by manipulating the `user_id` parameter.
 It contains all the information needed to understand a vulnerability, including what the bug is, where the bug is found, and what an attacker can do when it’s exploited
-
 ## Step 3: Include a Severity Assessment and CVSS
 Your report should also include an honest assessment of the bug’s severity.
 You could use the following scale to communicate severity:
-
 ### Low severity
 The bug doesn’t have the potential to cause a lot of damage.
 ex: an open redirect that can be used only for phishing is a low-severity bug.
-
 ### Medium severity
 The bug impacts users or the organization in a moderate way, or is a
 high-severity issue that’s difficult for a malicious hacker to exploit.
 ex: a cross-site request forgery (CSRF) on a sensitive action such as password change is often considered a medium-severity issue.
-
 ### High severity
 The bug impacts a large number of users, and its consequences can be
 disastrous for these users.
 ex: an open redirect that can be used to steal OAuth tokens is a high-severity bug
-
 ### Critical severity
 The bug impacts a majority of the user base or endangers the organization’s core infrastructure.
 ex: SQL injection leading to remote code execution (RCE) on the production server will be considered a critical issue.
-
 ### CVSS
 
 - The CVSS scale takes into account factors such as how a vulnerability impacts an organization, how hard the vulnerability is to exploit, and whether the vulnerability requires any special privileges or user interaction to exploit.
-- study CVSS at [https://www.first.org/cvss/](https://www.first.org/cvss/)
+- study [CVSS](https://www.first.org/cvss/)
 - Customize your assessment to fit the client’s business priorities for example:
 
 ex: a dating site might find a bug that exposes a user’s birth date as inconsequential, since
@@ -63,16 +50,12 @@ banking information are almost always considered a high-severity issue.
 ## Step 4: Give Clear Steps to Reproduce
 It’s best to assume the engineer on the other side has no knowledge of the vulnerability and doesn’t know how the application works. For example :
 
-1. Make two accounts on [example.com](http://example.com/): account A and account B.
-2. Log in to [example.com](http://example.com/) as account A, and visit [https://example.com/](https://example.com/)
-   change_password.
-3. Fill in the desired new password in the New password field, located atthe top left of the page.
+1. Make two accounts on `example.com`: account A and account B.
+2. Log in to `example.com` as account A, and visit `https://example.com/change_password`.
+3. Fill in the desired new password in the New password field, located at the top left of the page.
 4. Click the Change Password button located at the top right of the page.
-5. Intercept the POST request to [https://example.com/change_password](https://example.com/change_password) and
-change the user_id POST parameter to the user ID of account B.
-6. You can now log in to account B by using the new password you’ve
-chosen.
-
+5. Intercept the POST request to `https://example.com/change_password` and change the `user_id` POST parameter to the `user ID` of account B.
+6. You can now log in to account B by using the new password you’ve chosen.
 ## Step 5: Provide a Proof of Concept
 But for more complex vulnerabilities, it’s helpful to include a video, screenshots, or photos documenting your exploit, called a proof-of-concept (POC) file.
 

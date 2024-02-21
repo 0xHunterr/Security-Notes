@@ -3,49 +3,40 @@
 >  Try to uncover every feature in the application that users can access by browsing through every page and clicking every link. Access the functionalities that you don’t usually use.
 
 # Google Dorking
+Google can be a means of discovering valuable information such as hidden admin portals, unlocked password files, and leaked authentication keys like (`inurl`, `site`, `intitle`, `link`, `filetype`, `Wildcard (*) `, `Quotes (" ")`, `Or (|)`, `Minus (-)` ).
 
-Google can be a means of discovering valuable information such as hidden admin portals, unlocked password files, and leaked authentication keys like(inurl, site, intitle, link, filetype, Wildcard (*)Quotes (" "), Or (|)), Minus (-) .
-
-1.  look for all of a company’s subdomains by: site:*.example.com
-2. A compromised Kibana instance can allow attackers to collect extensive information about a site’s operation. Many Kibana dashboards run under the path app/kibana, so this query will reveal whether the target has a Kibana dashboard. You can then try to access the dashboard to see if it’s unprotected:  site:example.com inurl:app/kibana
-3. Google can find company resources hosted by a third party online, such as Amazon S3 buckets : site:s3.amazonaws.com COMPANY_NAME 
+1.  look for all of a company’s subdomains by: `site:*.example.com`
+2. A compromised Kibana instance can allow attackers to collect extensive information about a site’s operation. Many Kibana dashboards run under the path `app/kibana`, so this query will reveal whether the target has a Kibana dashboard. You can then try to access the dashboard to see if it’s unprotected:  site:example.com `inurl:app/kibana`
+3. Google can find company resources hosted by a third party online, such as Amazon S3 buckets : `site:s3.amazonaws.com COMPANY_NAME `
 4. Look for special extensions that could indicate a sensitive file:
-
-`site:example.com ext: (php | log | jsp | asp | log)`
-
-1. use **google hacking database** It contains many search queries that could be helpful to you during the recon process.
-
-
+   `site:example.com ext: (php | log | jsp | asp | log)`
+5. use **google hacking database** It contains many search queries that could be helpful to you during the recon process.
 # WHOIS and Reverse WHOIS
+You might be able to find the associated contact information, such as an email, name, address, or phone number: `$ whois facebook.com`
 
-You might be able to find the associated contact information, such as an email, name, address, or phone number: $ whois [facebook.com](http://facebook.com/)
+1. Find the IP address of a domain you know by running the nslookup command:`$ nslookup facebook.com`
+2. Reverse IP lookup and IP ranges (CIDRs) and also run `whois` on the IP:
+    
 
-1. Find the IP address of a domain you know by running the nslookup command:                              $ nslookup [facebook.com](http://facebook.com/)
-2. Reverse IP lookup and IP ranges (CIDRs) and also run whois on the IP:
+    ![Untitled](../../Media/Web%20AppSec%20Images/Untitled%201.png)
     
-    ![Untitled](Images/Untitled%201.png)
-    
-3. Autonomous system numbers (ASNs) identify the owners of these networks. By checking if two IP addresses share an ASN: $ whois -h [whois.cymru.com](http://whois.cymru.com/) 157.240.2.20
-    
-    ![Untitled](Gitbook/WebSec/Images/Untitled%201.png)
+3. Autonomous system numbers (ASNs) identify the owners of these networks. By checking if two IP addresses share an ASN: `$ whois -h whois.cymru.com 157.240.2.20`
+    ![Untitled](../../Media/Web%20AppSec%20Images/Untitled%202.png)
+>>>>>>> fix-images:Web AppSec/Web Vulnerabilities/Web Hacking Reconnaissance.md
     
 
 # Subdomain Enumeration
 After finding as many domains on the target as possible, locate as many subdomains on those domains as you can.
 Each subdomain represents a new angle for attacking the network.
-
 good tool for that is [subfinder](https://github.com/projectdiscovery/subfinder)
 use subdomain enumeration tools, you need to feed the program a wordlist of terms likely to appear in subdomains. You can find some
 good wordlists made by other hackers online. [SecLists](https://github.com/danielmiessler/SecLists/)
-
 use a wordlist generation tool like [Commonspeak2](https://github.com/assetnote/commonspeak2/) to generate wordlists based on the most current internet data.
-
 You can find subdomains of subdomains by running enumeration tools recursively: add the results of your first run to your Known Domains list and run the tool again.
 
 ```bash
 gobuster dns -d target_domain -w wordlist
 ```
-
 # Service Enumeration
  it can be done in two ways first is **active** scan using `nmap` or `masscan` or 
  **Passive** using **shodan , Censys, Project Sonar** it gives a lot of valuable info so it’s so important
