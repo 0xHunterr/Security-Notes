@@ -23,7 +23,7 @@ You might be able to find the associated contact information, such as an email, 
 1. Find the IP address of a domain you know by running the nslookup command:                              $ nslookup [facebook.com](http://facebook.com/)
 2. Reverse IP lookup and IP ranges (CIDRs) and also run whois on the IP:
     
-    ![Untitled](Gitbook/WebSec/Images/Untitled%201.png)
+    ![Untitled](Images/Untitled%201.png)
     
 3. Autonomous system numbers (ASNs) identify the owners of these networks. By checking if two IP addresses share an ASN: $ whois -h [whois.cymru.com](http://whois.cymru.com/) 157.240.2.20
     
@@ -60,7 +60,7 @@ domain or subdomain. This includes hidden directories and files.
 gobuster dir -u target_url -w wordlist
 ./dirsearch.py -u [scanme.nmap.org](http://scanme.nmap.org/) -e php
 ```
-use a screenshot tool like [EyeWitness ](https://github .com/FortyNorthSecurity/EyeWitness/) or [Snapper]([https://github.com/dxa4481/Snapper/](https://github.com/dxa4481/)) to automatically verify that a page is hosted on each location.
+use a screenshot tool like [EyeWitness ](https://github.com/FortyNorthSecurity/EyeWitness/) or [Snapper]([https://github.com/dxa4481/Snapper/](https://github.com/dxa4481/)) to automatically verify that a page is hosted on each location.
 EyeWitness accepts a list of URLs and takes screenshots of each page.
 # Spidering the Site
 Another way of discovering directories and paths is through Web Spidering, or
