@@ -27,7 +27,7 @@ You might be able to find the associated contact information, such as an email, 
     
 3. Autonomous system numbers (ASNs) identify the owners of these networks. By checking if two IP addresses share an ASN: $ whois -h [whois.cymru.com](http://whois.cymru.com/) 157.240.2.20
     
-    ![Untitled](Gitbook/WebSec/Images/Untitled%202.png)
+    ![Untitled](Gitbook/WebSec/Images/Untitled%201.png)
     
 
 # Subdomain Enumeration
