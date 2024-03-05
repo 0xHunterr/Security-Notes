@@ -4,28 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "3a744d925140f1f8",
+        "id": "a37ee99d96aba1c3",
         "type": "tabs",
         "children": [
           {
-            "id": "9aabb9bbc9b5b7b7",
+            "id": "810f590be3ff2d65",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "network-pentesting/recon.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "5aeb04d5b0c316be",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "network-pentesting/recon.md",
+                "file": "Web AppSec/Web Vulnerabilities/Cross Site Scripting (XSS).md",
                 "mode": "source",
                 "source": false
               }
@@ -97,9 +85,9 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "network-pentesting/recon.md",
-                "collapseAll": false,
-                "extraContext": false,
+                "file": "Web AppSec/Web Vulnerabilities/Cross Site Scripting (XSS).md",
+                "collapseAll": true,
+                "extraContext": true,
                 "sortOrder": "alphabetical",
                 "showSearch": false,
                 "searchQuery": "",
@@ -114,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "network-pentesting/recon.md",
+                "file": "Web AppSec/Web Vulnerabilities/Cross Site Scripting (XSS).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,15 +125,16 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "network-pentesting/recon.md"
+                "file": "Web AppSec/Web Vulnerabilities/Cross Site Scripting (XSS).md"
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 300,
+    "width": 200,
     "collapsed": true
   },
   "left-ribbon": {
@@ -158,34 +147,45 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "9aabb9bbc9b5b7b7",
+  "active": "810f590be3ff2d65",
   "lastOpenFiles": [
-    "network-pentesting/scanning-and-enumeration.md",
-    "network-pentesting/recon.md",
+    "Grad Discussion 1.md",
+    "Web AppSec/Web Vulnerabilities/Cross Site Scripting (XSS).md",
+    "Web AppSec/Web Vulnerabilities/Open Redirects.md",
+    "Network Pentesting/Active Directory AD/AD Post-Compromise Attacks.md",
+    "Web AppSec/Web Vulnerabilities/Clickjacking.md",
+    "المنهاج من ميراث النبوة/الباب الاول باب في مرجعية الوحي وتنزيله.md",
+    "المنهاج من ميراث النبوة",
+    "Network Pentesting/Recon.md",
+    "Network Pentesting/Web Applications.md",
+    "Web AppSec/Web Vulnerabilities/Cross Site Request Forgery (CSRF).md",
+    "Network Pentesting/Active Directory AD/README.md",
+    "Threat Hunting",
+    "ClONED Hunter.md",
+    "Network Pentesting/README.md",
+    "Network Pentesting/Buffer Overflow Attacks.md",
+    "Network Pentesting/Privilege Escalation.md",
+    "Network Pentesting/Scanning & Enumeration.md",
+    "Network Pentesting/Active Directory AD/AD Initial Attack Vectors.md",
+    "Network Pentesting/Active Directory AD/AD Post-Compromise Enumeration.md",
     "README.md",
-    "network-pentesting/Active Directory (AD)/README.md",
-    "web-appsec/Web Hacking Reconnaissance.md",
-    "web-appsec/bug-bounty/writing-a-good-report-web-appsec-bug-20bounty-writing-20a-20good-20report.md-bounty-writing-a-good-r.md",
-    "web-appsec/bug-bounty/picking-a-bug-bounty-program-web-appsec-bug-20bounty-picking-20a-20bug-20bounty-20program.md-bounty.md",
-    "web-appsec/bug-bounty",
-    "web-appsec/bash-scripting.md",
-    "network-pentesting/buffer-overflow-attacks.md",
-    "network-pentesting/Recon.md",
-    "network-pentesting/privilege-escalation.md",
-    "network-pentesting/Active Directory (AD)/attacking-active-directory-initial-attack-vectors.md",
-    "web-appsec/Bug Bounty/Writing A Good Report.md",
-    "web-appsec/Bug Bounty/Picking A Bug Bounty Program.md",
-    "web-appsec/Web Vulnerabilities/clickjacking.md",
-    "web-appsec/Web Vulnerabilities/cross-site-request-forgery-csrf.md",
-    "web-appsec/Web Vulnerabilities/cross-site-scripting-xss.md",
-    "web-appsec/Bug Bounty/README.md",
-    "network-pentesting/README.md",
-    "web-appsec/Web Vulnerabilities/README.md",
-    "SUMMARY.md",
-    "README (1).md",
-    "network-pentesting/Active Directory (AD)/attacking-active-directory-post-compromise-enumeration.md",
-    "web-appsec/Bash Scripting.md",
-    "CLICKJACKING.md",
-    "CROSS-SITE SCRIPTING (XSS).md"
+    "Media/network-pentesting/README.md",
+    "Media/network-pentesting/Active Directory (AD)/AD Overview & Lab Build.md",
+    "Media/network-pentesting/Active Directory (AD)/Post Compromise Attacks.md",
+    "Media/network-pentesting/Active Directory (AD)/Initial Attack Vectors.md",
+    "Network Pentesting/Active Directory AD/AD Overview & Lab Build.md",
+    "Network Pentesting/Active Directory AD/Active Directory.md",
+    "network-pentesting/scanning-and-enumeration.md",
+    "Media/NetworkPen Images/Pasted image 20240224175621.png",
+    "Pasted image 20240224175530.png",
+    "Pasted image 20240224175549.png",
+    "Media/NetworkPen Images/149 1.jpg",
+    "Media/NetworkPen Images/162 1.jpg",
+    "Media/Web AppSec Images/Pasted image 20240221221817.png",
+    "Media/Web AppSec Images/Pasted image 20240206094104.png",
+    "Media/Web AppSec Images/Pasted image 20240221221720.png",
+    "Media/Web AppSec Images/Pasted image 20240204170627.png",
+    "Media/Web AppSec Images/Pasted image 20240221221606.png",
+    "web-appsec/bug-bounty"
   ]
 }
